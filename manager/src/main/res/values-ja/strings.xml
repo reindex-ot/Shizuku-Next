@@ -1,23 +1,22 @@
 <resources>
-  <string name="app_name" translatable="false">Shizuku-Next</string>
   <!-- To translators: you can leave your here -->
   <string name="home_status_adb_wireless">adb</string>
   <string name="home_status_adb_usb">adb</string>
   <!-- Home - Adb -->
   <!-- Home - Wireless Adb -->
-  <string name="home_wireless_adb_title"><![CDATA[Start via Wireless debugging]]></string>
+  <string name="home_wireless_adb_title"><![CDATA[ワイヤレスデバッグで開始]]></string>
   <string name="home_wireless_adb_starting_without_wifi">Starting with no network: the device is asked for wireless debugging over and over until it stays on. This can take up to two minutes before it starts or gives up.</string>
   <string name="home_usb_adb_needs_network">A USB start uses the classic ADB port, and reopening it needs a network. Connect to Wi-Fi once, or use the wireless start above.</string>
   <string name="home_usb_adb_falls_back_to_wireless">USB start uses the ADB port, which needs a network connection to open again. Since Start without Wi-Fi is on, Shizuku will use wireless debugging instead.</string>
-  <string name="home_wireless_adb_summary">Starts using wireless debugging.</string>
-  <string name="home_usb_adb_title"><![CDATA[Start via USB debugging]]></string>
-  <string name="home_usb_adb_summary">Starts using USB debugging.</string>
+  <string name="home_wireless_adb_summary">ワイヤレスデバッグを使用して開始します。</string>
+  <string name="home_usb_adb_title"><![CDATA[USB デバッグで開始]]></string>
+  <string name="home_usb_adb_summary">USB デバッグを使用して開始します。</string>
   <!-- Adb -->
   <string name="dialog_adb_port">ポート</string>
-  <string name="dialog_adb_invalid_port">Enter a port number from 1 to 65535.</string>
+  <string name="dialog_adb_invalid_port">1 から 65535 までのポート番号を入力してください。</string>
   <string name="adb_pairing">ペアリング</string>
-  <string name="dialog_adb_pairing_title">Pair with device</string>
-  <string name="dialog_adb_pairing_discovery">Looking for pairing service</string>
+  <string name="dialog_adb_pairing_title">デバイスとペアリング</string>
+  <string name="dialog_adb_pairing_discovery">ペアリングサービスを探しています</string>
   <string name="dialog_adb_pairing_paring_code">ペアリングコード</string>
   <string name="paring_code_is_wrong">The pairing code is incorrect.</string>
   <string name="cannot_connect_port">Can\'t connect to wireless debugging service.\n\nPlease ensure that Shizuku is whitelisted in all firewall, ad-block, VPN, or similar apps that can restrict network access.</string>
@@ -28,8 +27,8 @@
   <string name="adb_pairing_requires_multi_window">First, open split-screen mode.</string>
   <string name="adb_pairing_requires_multi_window_reason">The system requires the pairing dialog to always be visible. Using split-screen mode is the only way to let this app and the system dialog be visible at the same time.</string>
   <string name="adb_error_key_store">Unable to generate key for wireless debugging.\nThis may be because the KeyStore mechanism of this device is broken.</string>
-  <string name="adb_error_stop_tcp">Could not stop ADB over TCP</string>
-  <string name="adb_pair_required">Pair the device first.</string>
+  <string name="adb_error_stop_tcp">TCP 経由で ADB を停止できませんでした</string>
+  <string name="adb_pair_required">始めにデバイスをペアリングしてください。</string>
   <string name="enable">有効</string>
   <string name="auto_pair_instructions">Pair without typing a code:\n\n1. Developer options → Wireless debugging\n2. Pair device with pairing code\n\nShizuku reads the code and port straight from that dialog and starts itself. Keep the dialog open until pairing finishes.</string>
   <string name="auto_pair_manual">手動</string>
@@ -45,13 +44,13 @@
   <string name="adb_pairing_tutorial_content_network">Shizuku needs to access the local network. It is controlled by the network permission.</string>
   <string name="adb_pairing_tutorial_content_network_limation_not_foreground">Some systems (such as MIUI) disallow apps to access the network when they are not visible, even if the app uses a foreground service. Please disable battery optimization features for Shizuku on such systems.</string>
   <!-- Home - Root -->
-  <string name="home_root_title"><![CDATA[Start via root]]></string>
+  <string name="home_root_title"><![CDATA[root で開始]]></string>
   <string name="home_root_description"><![CDATA[If you are using Magisk, you can try %1$s. For root users, it will eventually replace Shizuku. Note, existing applications need to change a little to use %2$s.]]></string>
   <string name="home_root_button_start">開始</string>
   <!-- Home - Application management -->
   <plurals name="home_app_management_authorized_apps_count">
-    <item quantity="one"><![CDATA[Authorized %d application]]></item>
-    <item quantity="other"><![CDATA[Authorized %d applications]]></item>
+    <item quantity="one"><![CDATA[%d 個のアプリが認証済み]]></item>
+    <item quantity="other"><![CDATA[%d 個のアプリが認証済み]]></item>
   </plurals>
   <!-- Home - Automation -->
   <!-- Home - Stealth mode -->
@@ -76,11 +75,11 @@
   <string name="apps_filter_granted">許可済み</string>
   <string name="apps_filter_revoked">拒否済み</string>
   <string name="apps_filter_hidden">非表示</string>
-  <string name="apps_no_match">No apps match your search</string>
-  <string name="app_management_sort_last_added">Recently added</string>
+  <string name="apps_no_match">検索条件に一致するアプリがありません</string>
+  <string name="app_management_sort_last_added">最近に追加</string>
   <string name="app_management_sort_updated">更新済み</string>
   <string name="app_management_sort_alphabetical">A-Z</string>
-  <string name="tab_home">Home</string>
+  <string name="tab_home">ホーム</string>
   <string name="tab_apps">アプリ</string>
   <string name="tab_settings">設定</string>
   <string name="home_status_transport_label">転送</string>
@@ -114,7 +113,7 @@
   <string name="intents_title">インテント</string>
   <string name="about_package">パッケージ</string>
   <string name="check_for_updates_now">今すぐ確認</string>
-  <string name="start_failed">Could not start Shizuku</string>
+  <string name="start_failed">Shizuku を開始できませんでした</string>
   <string name="start_failed_write_secure_settings">Shizuku cannot switch wireless debugging on without the WRITE_SECURE_SETTINGS permission. Turn it on yourself under Developer options &gt; Wireless debugging, or grant the permission with <b>adb shell pm grant moe.shizuku.privileged.api android.permission.WRITE_SECURE_SETTINGS</b>. Once Shizuku is running it keeps that permission itself, so this is a one-off.</string>
   <string name="action_open_wireless_debugging">ワイヤレスデバッグ</string>
   <string name="start_failed_unsupported">This device cannot start it in the background</string>
@@ -147,14 +146,14 @@
   <string name="intents_description">Automation apps can control Shizuku with these broadcasts. The auth token must be passed in the \"auth\" extra.</string>
   <string name="intents_token">認証トークン</string>
   <string name="intents_copy">コピー</string>
-  <string name="intents_regenerate">Regenerate</string>
+  <string name="intents_regenerate">再生成</string>
   <string name="intents_start">開始</string>
   <string name="intents_stop">停止</string>
   <string name="intents_watchdog_on">ウォッチドッグを ON</string>
   <string name="intents_watchdog_off">ウォッチドッグを OFF</string>
   <string name="intents_watchdog_toggle">ウォッチドッグの切り替え</string>
-  <string name="intents_adb_command">Start via Computer</string>
-  <string name="home_battery_warning">Shizuku may be killed in the background. Allow it to ignore battery optimizations.</string>
+  <string name="intents_adb_command">コンピューターから開始</string>
+  <string name="home_battery_warning">Shizuku がバックグラウンドで終了してしまう可能性があります。バッテリーの最適化を対象外にしてください。</string>
   <string name="batch_selected_count">%1$d 個を選択済み</string>
   <string name="app_management_action_select_all">すべて選択</string>
   <string name="app_management_action_grant">許可</string>
@@ -163,13 +162,13 @@
   <string name="app_management_batch_revoke_title">権限を拒否</string>
   <string name="app_management_batch_message">Apply to %1$d selected app(s)?</string>
   <string name="app_management_toggle_all_message">Apply to all %1$d listed apps?</string>
-  <string name="app_management_batch_granted">Access granted to %1$d apps</string>
-  <string name="app_management_batch_revoked">Access revoked from %1$d apps</string>
+  <string name="app_management_batch_granted">%1$d 個のアプリへのアクセスが許可されています</string>
+  <string name="app_management_batch_revoked">%1$d 個のアプリへのアクセスが拒否されています</string>
   <string name="action_undo">元に戻す</string>
   <!-- Terminal -->
-  <string name="terminal_tutorial_miui">Users have reported that MIUI breaks the Storage Access Framework, which is used by the export function.</string>
-  <string name="terminal_tutorial_miui_2">If you are using MIUI, you may have to extract the file from the assets folder in Shizuku\'s APK.</string>
-  <string name="terminal_tutorial_1">Tap to export the files to a new folder.</string>
+  <string name="terminal_tutorial_miui">MIUI がエクスポート機能で使用している、ストレージアクセスフレームワークを正常に動作しなくさせているとの報告がユーザーから寄せられています。</string>
+  <string name="terminal_tutorial_miui_2">MIUI を使用している場合、Shizuku の APK にある assets フォルダからファイルを抽出する必要があるかもしれません。</string>
+  <string name="terminal_tutorial_1">タップしてファイルを新しいフォルダにエクスポートします。</string>
   <string name="terminal_tutorial_1_description">Two files will be exported: %1$s and %2$s. If the files already exist in the selected folder, they will be deleted.</string>
   <string name="terminal_tutorial_2">Use your terminal app to copy the files to its private files directory.</string>
   <string name="terminal_tutorial_2_description">Tip: If your terminal app\'s home directory (~) is in the private files directory, placing the files there will allow you to run %1$s without writing the path.\n\nOtherwise, you can create an alias for %2$s in your terminal app\'s %3$s configuration file.</string>
@@ -197,28 +196,28 @@
   <string name="stealth_unhide">表示</string>
   <!-- Settings -->
   <string name="settings_start_on_boot">起動時に開始</string>
-  <string name="settings_use_system_color">システムテーマの色を使用する</string>
+  <string name="settings_use_system_color">システムテーマの色を使用</string>
   <string name="settings_watchdog">ウォッチドッグ</string>
-  <string name="settings_watchdog_summary">Restart Shizuku automatically if it crashes</string>
-  <string name="settings_auto_disable_wireless_debugging">Auto-disable wireless debugging</string>
-  <string name="settings_auto_disable_wireless_debugging_summary">Turn off wireless debugging when Shizuku stops.</string>
+  <string name="settings_watchdog_summary">Shizuku がクラッシュした場合に自動で再起動します。</string>
+  <string name="settings_auto_disable_wireless_debugging">ワイヤレスデバッグを自動的に無効化</string>
+  <string name="settings_auto_disable_wireless_debugging_summary">Shizuku が停止したときにワイヤレスデバッグを無効化します。</string>
   <string name="settings_start_method">デフォルトの開始方法</string>
-  <string name="settings_start_method_root_unavailable">This device has no root, so starts fall back to wireless debugging.</string>
+  <string name="settings_start_method_root_unavailable">このデバイスは root 化されていないため、ワイヤレスデバッグへフォールバックします。/string>
   <string name="start_method_wireless">ワイヤレス</string>
   <string name="start_method_usb">USB</string>
   <string name="start_method_system">システム</string>
   <string name="start_method_root">Root</string>
   <string name="transport_adb">adb</string>
-  <string name="settings_adb_without_developer_options">Use ADB without Developer options</string>
-  <string name="settings_adb_without_developer_options_summary">Turns off Developer options but keeps the ADB settings Shizuku needs. Shizuku will keep working, and these settings will be restored after every reboot.</string>
-  <string name="start_failed_developer_options_off">Developer options is off because ADB without Developer options is enabled</string>
-  <string name="action_turn_on_developer_options">Turn on Developer options</string>
-  <string name="toast_developer_options_required">Turn off ADB without Developer options</string>
-  <string name="settings_adb_without_developer_options_confirm_title">Turn off Developer options?</string>
+  <string name="settings_adb_without_developer_options">開発者向けオプションを介さずに ADB を使用</string>
+  <string name="settings_adb_without_developer_options_summary">開発者向けオプションを無効化しても Shizuku に必要な ADB 設定を保持します。Shizuku はそのまま動作し、これらの設定は再起動のたびに復元されます。</string>
+  <string name="start_failed_developer_options_off">「開発者向けオプションを介さずに ADB を使用」が有効化されているため、開発者向けオプションは無効化されています。。</string>
+  <string name="action_turn_on_developer_options">開発者向けオプションを有効化</string>
+  <string name="toast_developer_options_required">開発者向けオプションを介さずに ADB を無効化</string>
+  <string name="settings_adb_without_developer_options_confirm_title">開発者向けオプションを無効化しますか？</string>
   <string name="settings_adb_without_developer_options_confirm_message">Shizuku will keep working and restore its ADB settings after a reboot. You will not be able to open Developer options to change USB or wireless debugging settings or pair a new device. Turn off Developer options?</string>
   <string name="settings_adb_without_developer_options_confirm">OFF に切り替え</string>
   <string name="settings_adb_without_developer_options_failed">Shizuku could not change the settings. Grant WRITE_SECURE_SETTINGS on the permissions page first.</string>
-  <string name="settings_wait_for_wifi">Wait for Wi-Fi</string>
+  <string name="settings_wait_for_wifi">Wi-Fi を待機中</string>
   <string name="settings_wait_for_wifi_summary">Automatic Shizuku restarts wait for an unmetered Wi-Fi connection.</string>
   <string name="settings_unavailable_while_forcing_wireless">Unavailable while Start without Wi-Fi is on.</string>
   <string name="settings_force_wireless_debugging">Start without Wi-Fi (experimental)</string>
@@ -228,12 +227,12 @@
   <string name="settings_persist_adb_port_ok">The ADB port will stay open after reboot</string>
   <string name="settings_persist_adb_port_refused">Android refused this. Shizuku must be running as root or the system user.</string>
   <string name="settings_persist_adb_port_unavailable">Start Shizuku first. This setting can only be changed through Shizuku.</string>
-  <string name="settings_system_start_method">System start method</string>
+  <string name="settings_system_start_method">システムの開始方法</string>
   <string name="settings_system_start_method_exploit">デバイスのエクスプロイト</string>
   <string name="settings_system_start_method_custom">カスタムコマンド</string>
-  <string name="home_system_title">Start via System UID</string>
-  <string name="home_system_summary">Run Shizuku as the system user (UID 1000) instead of as adb only works on devices with the built-in exploit</string>
-  <string name="home_adb_command_summary">Start Shizuku from a computer over ADB. Tap to copy the command</string>
+  <string name="home_system_title">システム UID で開始</string>
+  <string name="home_system_summary">Shizuku を adb 経由ではなく、システムユーザー (UID 1000) として実行可能なのは、組み込みのエクスプロイトを備えたデバイスのみになります。</string>
+  <string name="home_adb_command_summary">PC から ADB 経由で Shizuku を起動します。タップでコマンドをコピーします。</string>
   <string name="settings_tcp_mode">TCP モード</string>
   <string name="settings_tcp_mode_summary">"Allows Shizuku to restart without Wi-Fi. (Shizuku must have started once since reboot)"</string>
   <string name="settings_tcp_mode_dialog_close_port">"The TCP port will be closed immediately. You will need Wi-Fi to turn on TCP mode again. Continue?"</string>
@@ -242,14 +241,14 @@
   <string name="settings_restart_dialog_message_wifi_required"><![CDATA[<br><br><b>Wi-Fi is required. Shizuku will continue running and wait for a Wi-Fi connection before restarting in the background.</b>]]></string>
   <string name="settings_tcp_port">TCP ポート</string>
   <string name="settings_auto_disable_usb_debugging">USB デバッグを自動で無効</string>
-  <string name="settings_auto_disable_usb_debugging_summary">Disable USB debugging when stopping Shizuku</string>
+  <string name="settings_auto_disable_usb_debugging_summary">Shizuku を停止するときに USB デバッグを無効化します。</string>
   <string name="settings_language">言語</string>
   <string name="settings_black_night_theme">AMOLED ブラック</string>
-  <string name="settings_black_night_theme_summary">Use a pure black theme in dark mode</string>
+  <string name="settings_black_night_theme_summary">ダークモードでピュアブラックテーマを使用します。</string>
   <string name="settings_update_stable">Stable</string>
   <string name="settings_update_beta">Dev</string>
   <string name="settings_permissions">権限</string>
-  <string name="settings_permissions_summary">What Shizuku needs and what is allowed</string>
+  <string name="settings_permissions_summary">Shizuku に必要なものと許可しているものです。</string>
   <string name="permissions_allowed">許可済み</string>
   <string name="permissions_action_allow">許可</string>
   <string name="permissions_action_settings">設定</string>
@@ -281,19 +280,19 @@
   <!-- Snackbar -->
   <string name="snackbar_battery_optimization_settings">Turn off battery optimization to use this feature.</string>
   <string name="snackbar_action_fix">修正</string>
-  <string name="snackbar_update_available">A new update is available</string>
+  <string name="snackbar_update_available">新しいバージョンが利用可能です</string>
   <string name="snackbar_action_update">更新</string>
   <!-- Updates -->
   <string name="check_for_updates">更新を確認する</string>
-  <string name="update_latest_installed">You already have the latest version</string>
-  <string name="update_check_failed">Could not check for updates</string>
-  <string name="update_check_offline">Could not reach GitHub. Check your connection and try again.</string>
+  <string name="update_latest_installed">最新のバージョンを使用しています</string>
+  <string name="update_check_failed">更新を確認できませんでした</string>
+  <string name="update_check_offline">GitHub に接続できませんでした。接続状態を確認して、再度お試しください。</string>
   <string name="update_check_rate_limited">GitHub is rate-limiting update checks. Try again later.</string>
   <string name="update_check_rate_limited_minutes">GitHub is rate-limiting update checks. Try again in about %1$d min.</string>
   <string name="update_check_http_error">Could not check for updates (HTTP %1$d)</string>
   <string name="update_check_no_release">No published release to compare against yet</string>
   <string name="update_downloading">更新をダウンロード中...</string>
-  <string name="update_download_failed">Could not download update</string>
+  <string name="update_download_failed">更新をダウンロードできませんでした</string>
   <string name="update_success">更新が完了しました</string>
   <string name="update_failed">更新に失敗しました</string>
   <!-- Toast -->
@@ -326,8 +325,6 @@
   <string name="notification_auth_invalid_title">無効な認証トークン</string>
   <string name="notification_auth_invalid_message">Make sure the token in your intent matches the one shown under “View intents” in the app.</string>
   <!-- Permission related, appears in system permission UI -->
-  <string name="permission_group_label" translatable="false">Shizuku</string>
-  <string name="permission_group_description" translatable="false">@string/permission_label</string>
   <string name="permission_label">Shizuku のアクセス</string>
   <string name="permission_description">Allow the app to use Shizuku.</string>
   <string name="permission_warning_template"><![CDATA[Allow <b>%1$s</b> to %2$s?]]></string>
@@ -351,8 +348,8 @@
   <string name="shell_title">シェル</string>
   <string name="shell_backend_shizuku">Shizuku</string>
   <string name="shell_backend_root">Root</string>
-  <string name="shell_backend_shizuku_status">Shizuku, uid %1$d</string>
-  <string name="shell_backend_root_status">Root, uid 0</string>
+  <string name="shell_backend_shizuku_status">Shizuku、uid %1$d</string>
+  <string name="shell_backend_root_status">Root、uid 0</string>
   <string name="shell_backend_offline">No command runner is active</string>
   <string name="shell_needs_a_backend">Start Shizuku, or pick Root on a rooted device: one of the two runs the commands. Root works with Shizuku stopped.</string>
   <string name="shell_intro">Runs as the uid Shizuku runs as (2000 over adb, 0 with root), so it reaches whatever that uid can: /sdcard, /system, and app data with root. It opens in /sdcard, one command at a time; with no tty behind it, programs that need a terminal (nano, an ssh prompt) will not run here.</string>
@@ -372,7 +369,7 @@
   <string name="shell_collapse">折りたたむ</string>
   <string name="shell_library">ライブラリ</string>
   <string name="shell_library_hint">コマンドを検索</string>
-  <string name="shell_library_empty">No matching command.</string>
+  <string name="shell_library_empty">一致するコマンドがありません。</string>
   <string name="shell_variables_title">Fill it in</string>
   <string name="shell_variables_pick_app">Pick an app</string>
   <string name="shell_bookmarks">保存しました</string>
@@ -407,9 +404,9 @@
   <!-- Watchdog -->
   <string name="watchdog_running">ウォッチドッグが有効です</string>
   <string name="watchdog_turn_off">OFF に切り替え</string>
-  <string name="watchdog_shizuku_crashed_title">Shizuku crashed recently</string>
-  <string name="watchdog_shizuku_crashed_text">Watchdog restarted Shizuku. Tap to see ways to prevent crashes.</string>
-  <string name="watchdog_shizuku_crashed_action_turn_off_alerts">Turn Off Alerts</string>
+  <string name="watchdog_shizuku_crashed_title">最近に Shizuku がクラッシュしました</string>
+  <string name="watchdog_shizuku_crashed_text">ウォッチドッグが Shizuku を再起動しました。タップして、クラッシュを防ぐ方法を確認してください。</string>
+  <string name="watchdog_shizuku_crashed_action_turn_off_alerts">警告を OFF に切り替える</string>
   <!-- Misc -->
   <string name="error">エラー</string>
   <string name="off">OFF</string>
@@ -431,13 +428,13 @@
   <string name="manage_filter_system">システム</string>
   <string name="manage_filter_disabled">無効</string>
   <string name="manage_filter_hidden">非表示</string>
-  <string name="manage_filter_empty">Nothing in this filter.</string>
-  <string name="manage_empty">No apps found.</string>
+  <string name="manage_filter_empty">このフィルターには何もありません。</string>
+  <string name="manage_empty">アプリが見つかりません。</string>
   <string name="manage_status_system">システム</string>
-  <string name="manage_status_removed">Removed, data kept</string>
+  <string name="manage_status_removed">削除済み、データは保持</string>
   <string name="manage_status_disabled">無効</string>
   <string name="manage_status_suspended">休止</string>
-  <string name="manage_status_hidden">No launcher icon</string>
+  <string name="manage_status_hidden">ランチャーアイコンなし</string>
   <!-- One app, and what it may do on the device -->
   <string name="app_detail_missing">This app is no longer installed.</string>
   <string name="app_open_info">アプリ情報</string>
@@ -459,38 +456,38 @@
   <string name="app_ops_note">App ops are what the platform itself consults, and adb can change the ones below. A few capabilities are special access in system settings rather than app ops all files access, usage access, exact alarms, modifying system settings and no app can change those.</string>
   <string name="app_ops_needs_shizuku">Start Shizuku to read and change app ops.</string>
   <string name="app_op_background">バックグラウンドで実行</string>
-  <string name="app_op_background_note">Deny stops it from running in the background.</string>
-  <string name="app_op_foreground">Foreground services</string>
-  <string name="app_op_foreground_note">Deny stops its foreground services.</string>
-  <string name="app_op_wake_lock">Keep awake</string>
-  <string name="app_op_wake_lock_note">Deny stops it keeping the device awake.</string>
+  <string name="app_op_background_note">拒否にするとバックグラウンドでの実行を停止します。</string>
+  <string name="app_op_foreground">フォアグラウンドサービス</string>
+  <string name="app_op_foreground_note">拒否するとフォアグラウンドサービスを停止します。</string>
+  <string name="app_op_wake_lock">画面の点灯を保持</string>
+  <string name="app_op_wake_lock_note">拒否するとデバイスをスリープ状態にしないようにする動作を停止します。</string>
   <string name="app_op_notifications">通知を表示</string>
-  <string name="app_op_notifications_note">Deny hides its notifications.</string>
-  <string name="app_op_clipboard">クリップボードを読み取り</string>
-  <string name="app_op_clipboard_note">Deny stops it reading your clipboard.</string>
-  <string name="app_op_overlay">Draw over other apps</string>
-  <string name="app_op_overlay_note">Deny stops it showing over other apps. Some apps need this to work.</string>
+  <string name="app_op_notifications_note">拒否すると通知を非表示にします。</string>
+  <string name="app_op_clipboard">クリップボードの読み取り</string>
+  <string name="app_op_clipboard_note">拒否するとクリップボードの読み取りを阻止します。</string>
+  <string name="app_op_overlay">他のアプリの上に表示</string>
+  <string name="app_op_overlay_note">拒否すると他のアプリの上に表示しません。一部のアプリは動作させるためにこの機能が必要になります。</string>
   <string name="app_op_install">その他のアプリをインストール</string>
-  <string name="app_op_install_note">Deny stops it installing APKs.</string>
-  <string name="app_op_set">App op changed</string>
+  <string name="app_op_install_note">拒否すると APK のインストールを阻止します。</string>
+  <string name="app_op_set">App ops を変更しました</string>
   <string name="app_op_mode_default">デフォルト</string>
   <string name="app_op_mode_allow">許可</string>
   <string name="app_op_mode_ignore">無視</string>
   <string name="app_op_mode_deny">拒否</string>
   <string name="app_action_force_stop">強制停止</string>
-  <string name="app_action_force_stop_note">Stops it now. It may start again later.</string>
+  <string name="app_action_force_stop_note">今すぐに停止します。後にタスクが再開するかもしれません。</string>
   <string name="app_action_suspend">休止</string>
   <string name="app_action_unsuspend">休止を解除</string>
-  <string name="app_action_suspend_note">Disables it but keeps its data.</string>
+  <string name="app_action_suspend_note">無効化しますが、データを保持します。</string>
   <string name="app_action_disable">無効化</string>
   <string name="app_action_enable">有効化</string>
-  <string name="app_action_disable_note">Disables it until you enable it again.</string>
+  <string name="app_action_disable_note">再度、有効化するまで無効化します。</string>
   <string name="app_action_clear_data">データを消去</string>
-  <string name="app_action_clear_data_note">Deletes its files, settings, and accounts.</string>
-  <string name="app_action_uninstall">Uninstall for this user</string>
-  <string name="app_action_uninstall_note">Removes the app but keeps its data.</string>
+  <string name="app_action_clear_data_note">ファイル、設定、アカウントを削除します。</string>
+  <string name="app_action_uninstall">このユーザーはアンインストール</string>
+  <string name="app_action_uninstall_note">アプリを削除しますが、データは保持します。</string>
   <string name="app_action_restore">システムアプリを復元</string>
-  <string name="app_action_restore_note">Restores a removed system app for this user.</string>
+  <string name="app_action_restore_note">このユーザー向けに削除されたシステムアプリを復元します。</string>
   <string name="app_confirm_title">Are you sure?</string>
   <string name="app_confirm_disable">Disable %1$s? It stops running until you enable it again.</string>
   <string name="app_confirm_clear_data">Delete all data for %1$s? This cannot be undone.</string>
@@ -498,10 +495,10 @@
   <string name="app_battery_needs_shizuku">Start Shizuku to change battery settings.</string>
   <string name="app_battery_bucket">Standby bucket</string>
   <string name="app_battery_pick_title">Standby bucket</string>
-  <string name="app_bucket_active">Unrestricted</string>
-  <string name="app_bucket_active_note">It can run freely in the background.</string>
+  <string name="app_bucket_active">制限なし</string>
+  <string name="app_bucket_active_note">バックグラウンドで自由に動作させることができます。</string>
   <string name="app_bucket_default">デフォルト</string>
-  <string name="app_bucket_default_note">Android decides how much it can run.</string>
+  <string name="app_bucket_default_note">Android がどの程度で実行するかを判断します。</string>
   <string name="app_bucket_exempted">Exempted</string>
   <string name="app_bucket_exempted_note">The system exempts this app from app standby, so the bucket below is not the one in force.</string>
   <string name="app_bucket_frequent">Frequent</string>
@@ -511,10 +508,10 @@
   <string name="app_bucket_restricted">Restricted</string>
   <string name="app_bucket_restricted_note">Rarely allowed to run in the background.</string>
   <string name="app_bucket_never">Never</string>
-  <string name="app_bucket_never_note">Cannot run in the background.</string>
-  <string name="app_battery_unrestricted">Ignore battery optimisation</string>
-  <string name="app_battery_unrestricted_note">Lets it stay active during Doze, but uses more battery.</string>
-  <string name="app_info_version">Version</string>
+  <string name="app_bucket_never_note">バックグラウンドで実行できません。</string>
+  <string name="app_battery_unrestricted">バッテリーの最適化を無視</string>
+  <string name="app_battery_unrestricted_note">Doze 中でも有効な状態を維持しますが、バッテリー消費が増加します。</string>
+  <string name="app_info_version">バージョン</string>
   <string name="app_info_uid">UID</string>
   <string name="app_info_target_sdk">ターゲット SDK</string>
   <string name="app_info_min_sdk">最小 SDK</string>
@@ -524,9 +521,9 @@
   <string name="app_info_installer">インストール元</string>
   <string name="app_info_installed">インストール済み</string>
   <string name="app_info_updated">更新済み</string>
-  <string name="app_info_debuggable">Debuggable</string>
+  <string name="app_info_debuggable">デバッグ可能</string>
   <string name="app_info_backup">許可済みをバックアップ</string>
-  <string name="app_info_launcher">Launcher entry</string>
+  <string name="app_info_launcher">ランチャーの項目</string>
   <string name="app_info_yes">はい</string>
   <string name="app_info_no">いいえ</string>
 </resources>
